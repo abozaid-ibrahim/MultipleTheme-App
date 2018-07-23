@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MultipleThemeApp
 //
-//  Created by Mojaz on 7/23/18.
+//  Created by Abuzeid on 7/23/18.
 //  Copyright © 2018 Abuzeid. All rights reserved.
 //
 
@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+//        ThemeManager.shared.applyTheme(theme: AppTheme.green)
+        
+        UIButton.appearance().layer.cornerRadius = 12
+        UIButton.appearance().clipsToBounds = true
+        
         return true
     }
 
